@@ -28,6 +28,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "styles": "postcss --config postcssPlugins.json"
+    "styles": "postcss --config postcssPlugins.json",
+    "watch-styles": "postcss --config postcssPlugins.json --watch",
+    "deploy": "sh ./deploy.sh"
   }
 }

@@ -104,7 +104,9 @@ class App extends React.Component {
           <AddressListFilter
             filterTerm={this.state.filterTerm}
             updateFilterTerm={this.updateFilterTerm} />
-          <AddressTable />
+          <AddressTable
+            addresses={this.state.addresses}
+            filterTerm={this.state.filterTerm} />
         </div>
       )
     }
