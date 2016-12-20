@@ -1,0 +1,33 @@
+{
+  "name": "mcbride-address-book",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^6.5.4",
+    "css-mqpacker": "^5.0.1",
+    "perfectionist": "^2.3.1",
+    "postcss": "^5.2.6",
+    "postcss-cli": "^2.6.0",
+    "postcss-conditionals": "^2.0.3",
+    "postcss-css-variables": "^0.6.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-import": "^9.0.0",
+    "postcss-nested": "^1.0.0",
+    "postcss-normalize": "^0.3.0",
+    "react-scripts": "0.8.4"
+  },
+  "dependencies": {
+    "history": "^4.5.0",
+    "re-base": "^2.5.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-router": "4.0.0-alpha.6"
+  },
+  "scripts": {
+    "start": "npm run styles && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "styles": "postcss --config postcssPlugins.json"
+  }
+}
