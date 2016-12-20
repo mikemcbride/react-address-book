@@ -4,6 +4,8 @@ import { BrowserRouter, Match, Miss } from 'react-router'
 import AddressList from './AddressList.jsx'
 import AddressTable from './AddressTable.jsx'
 import AddressListFilter from './AddressListFilter.jsx'
+import AddressDetail from './AddressDetail.jsx'
+import EditAddress from './EditAddress.jsx'
 import NewAddress from './NewAddress.jsx'
 
 class App extends React.Component {
@@ -46,6 +48,7 @@ class App extends React.Component {
   
   updateEntry(key, updatedEntry) {
     const addresses = {...this.state.addresses}
+    console.log({ key, updatedEntry })
     addresses[key] = updatedEntry
     this.setState({ addresses })
   }
@@ -53,12 +56,12 @@ class App extends React.Component {
 	removeEntry(key) {
 		const addresses = {...this.state.addresses}
 		addresses[key] = null
-		this.setState({ addresses })	
+		this.setState({ addresses })
 	}
   
   render() {
     // the following functions allow us to pass props into our component routes
-    const renderAddressList = ({...props}) => {
+    const renderAddressList = (props) => {
       return (
         <div>
           <AddressListFilter
@@ -71,25 +74,31 @@ class App extends React.Component {
       )
     }
     
-    const renderAddressDetail = ({...props}) => {
+    const renderAddressDetail = (props) => {
       return (
-        <div>address detail</div>
+        <AddressDetail
+          addressId={props.params.addressId}
+          addresses={this.state.addresses} />
       )
     }
     
-    const renderAddressEdit = ({...props}) => {
+    const renderAddressEdit = (props) => {
       return (
-        <div>Edit address</div>
+        <EditAddress
+          addressId={props.params.addressId}
+          addresses={this.state.addresses}
+          updateEntry={this.updateEntry}
+          removeEntry={this.removeEntry} />
       )
     }
     
-    const renderAddressCreate = ({...props}) => {
+    const renderAddressCreate = (props) => {
       return (
         <NewAddress addEntry={this.addEntry} />
       )
     }
       
-    const renderAddressTable = ({...props}) => {
+    const renderAddressTable = (props) => {
       return (
         <div>
           <AddressListFilter

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 
 class NewAddress extends React.Component {
-  createEntry (event, cb) {
+  createEntry (event) {
     event.preventDefault()
     
     const entry = {
@@ -12,7 +12,7 @@ class NewAddress extends React.Component {
       city: this.city.value,
       state: this.state.value,
       zip: this.zip.value,
-      christmas: this.christmas.value
+      christmas: this.christmas.checked
     }
 		
 		this.props.addEntry(entry)

@@ -41,8 +41,8 @@ export function arrayContainsValue(arr, val) {
 
 export function sortByKey(array, key) {
   return array.sort(function (a, b) {
-    const x = a[key]
-    const y = b[key]
+    const x = a[key].toLowerCase()
+    const y = b[key].toLowerCase()
     return ((x < y) ? -1 : ((x > y) ? 1 : 0))
   })
 }
