@@ -23,8 +23,8 @@ class AddressDetail extends React.Component {
 
 
         <div className="right">
-          <Link to="/" className="btn mr-sm" type="button">Back</Link>
-          <Link to={`/address/${this.props.addressId}/edit`} className="btn" type="button">Edit</Link>
+          <Link to="/react-address-book/" className="btn mr-sm" type="button">Back</Link>
+          <Link to={`/react-address-book/address/${this.props.addressId}/edit`} className="btn" type="button">Edit</Link>
         </div>
       </div>
     )

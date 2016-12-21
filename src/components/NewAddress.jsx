@@ -60,7 +60,7 @@ class NewAddress extends React.Component {
         </div>
         
         <div className="right">
-          <Link className="btn mr-sm" type="button" to="/list">Cancel</Link>
+          <Link to="/react-address-book/list" className="btn mr-sm" type="button">Cancel</Link>
           <button className="btn btn-primary" type="submit">Submit</button>
         </div>
       </form>

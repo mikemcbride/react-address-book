@@ -23,7 +23,7 @@ class AddressListFilter extends React.Component {
             placeholder="Search" />
         </div>
         <div className="flex-table-item add-button">
-          <Link to="/new" className="btn" type="button">New</Link>
+          <Link to="/react-address-book/new" className="btn" type="button">New</Link>
         </div>
       </div>
     )

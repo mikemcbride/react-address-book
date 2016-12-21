@@ -26,7 +26,7 @@ class AddressList extends React.Component {
     }
     
     return (
-      <Link to={`/address/${address.id}`} key={ address.id } className="list-item">
+      <Link to={`/react-address-book/address/${address.id}`} key={ address.id } className="list-item">
         { christmasIcon }
         <strong>{ address.lastName },</strong> { address.name }
       </Link>

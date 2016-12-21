@@ -75,7 +75,7 @@ class EditAddress extends React.Component {
           
           <div className="clearfix">
             <div className="right">
-              <Link to={`/address/${this.props.addressId}`} className="btn mr-sm">Cancel</Link>
+              <Link to={`/react-address-book/address/${this.props.addressId}`} className="btn mr-sm">Cancel</Link>
               <button className="btn btn-primary" type="submit">Update</button>
             </div>
           </div>
