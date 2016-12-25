@@ -13,7 +13,7 @@ export function objectHasValue(obj, term) {
         if (arrayContainsValue(thisProp, term)) {
           return true
         }
-      } else if (thisProp.toString().toLowerCase().includes(term)) {
+      } else if (thisProp.toString().toLowerCase().includes(term.toLowerCase())) {
         return true
       }
     }
@@ -31,7 +31,7 @@ export function arrayContainsValue(arr, val) {
       if (objectHasValue(el, val)) {
         return true
       }
-    } else if (el.toString().toLowerCase().includes(val)) {
+    } else if (el.toString().toLowerCase().includes(val.toLowerCase())) {
       return true
     }
     
