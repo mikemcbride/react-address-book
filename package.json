@@ -2,7 +2,6 @@
   "name": "react-address-book",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mmcbride1007.github.io/react-address-book",
   "devDependencies": {
     "autoprefixer": "^6.5.4",
     "css-mqpacker": "^5.0.1",

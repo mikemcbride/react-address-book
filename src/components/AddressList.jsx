@@ -65,10 +65,6 @@ class AddressList extends React.Component {
             {addressList.map(this.renderAddress)}
           </div>
         </section>
-
-        <ul>
-        </ul>
-        
       </div>
     )
   }

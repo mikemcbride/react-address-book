@@ -113,7 +113,7 @@ class App extends React.Component {
     
     return (
       <BrowserRouter>
-  			<div className="container">
+  			<div className="container pb-4">
   				<Match exactly pattern='/react-address-book/' render={renderAddressList} />
           <Match exactly pattern='/react-address-book/address/:addressId' render={renderAddressDetail} />
           <Match exactly pattern='/react-address-book/address/:addressId/edit' render={renderAddressEdit} />

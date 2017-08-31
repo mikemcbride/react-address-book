@@ -1,0 +1,12 @@
+{
+  "name": "mcbride-address-book",
+  "scripts": {
+    "start": "serve ."
+  },
+  "dependencies": {
+    "serve": "latest"
+  },
+  "now": {
+    "alias": "mcbride-address-book"
+  }
+}
